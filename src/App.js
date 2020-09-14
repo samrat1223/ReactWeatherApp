@@ -33,7 +33,7 @@ class App extends React.Component {
   const country = e.target.elements.country.value ; {/* We are targeting Form component's input element named country*/}
 
 
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`); 
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`); 
      
      const data  = await api_call.json(); {/*This JSON changes all the data we recieves from 
      //api call to language readable code and stores those datas in variable data */} 
